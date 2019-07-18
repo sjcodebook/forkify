@@ -13,7 +13,7 @@ export default class Search {
       const search = await axios(
         `https://api.edamam.com/search?q=${
           this.query
-        }&app_id=${ID}&app_key=${key}`
+        }&to=30&app_id=${ID}&app_key=${key}`
       );
       this.result = search.data.hits;
     } catch (error) {
