@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { key, ID } from '../config';
 
 export default class Search {
   constructor(query) {
@@ -6,9 +7,6 @@ export default class Search {
   }
 
   async getResult() {
-    const key = 'd462695041630571ba19563f0a692c52';
-    const ID = '37b380d8';
-
     try {
       const search = await axios(
         `https://api.edamam.com/search?q=${
