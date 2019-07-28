@@ -1,6 +1,6 @@
 # forkify
 
-###A food search website
+### A food search website
 
 ###### Made using vanilla javascript
 
